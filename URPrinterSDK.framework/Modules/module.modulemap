@@ -1,0 +1,6 @@
+framework module URPrinterSDK {
+  umbrella header "URPrinterSDK.h"
+
+  export *
+  module * { export * }
+}
