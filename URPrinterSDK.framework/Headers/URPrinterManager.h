@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface URPrinterManager : NSObject
 
+@property(nonatomic,assign)BOOL isConnect;
+
+
 + (instancetype)sharedInstance;
 
 /** 蓝牙 */

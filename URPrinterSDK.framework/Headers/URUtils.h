@@ -71,27 +71,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// BarcodeType -> String
 /// @param type BarcodeType
-+ (NSString *)barcodeTypeToStr:(BarcodeType)type;
++ (NSString *)barcodeTypeToStr:(URBarcodeType)type;
 
 /// Alignment -> String
 /// @param alignment Alignment
-+ (NSString *)alignmentToStr:(Alignment)alignment;
++ (NSString *)alignmentToStr:(URPrintAlignment)alignment;
 
 /// TextAngle -> String
 /// @param angle TextAngle
-+ (NSString *)textAlignmentToStr:(TextAngle)angle;
++ (NSString *)textAlignmentToStr:(URTextAngle)angle;
 
 /// QRCodeLevel -> String
 /// @param level QRCodeLevel
-+ (NSString *)qrcodeLevelToStr:(QRCodeLevel)level;
++ (NSString *)qrcodeLevelToStr:(URQRCodeLevel)level;
 
 /// Mode -> String
 /// @param mode Mode
-+ (NSString *)qrcodeInputModeToStr:(Mode)mode;
++ (NSString *)qrcodeInputModeToStr:(URQRCodeInputMode)mode;
 
 /// Orientation -> String
 /// @param orientation orientation
-+ (NSString *)orientationToStr:(Orientation)orientation;
++ (NSString *)orientationToStr:(URPrintOrientationType)orientation;
 
 /// 检测字符串是否为数字(Checks if the string is a number)
 /// @param str 字符串(String)
@@ -99,7 +99,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Graphics -> String
 /// @param graphics Graphics
-+ (NSString *)graphicsToStr:(Graphics)graphics;
++ (NSString *)graphicsToStr:(URPrintGraphicsType)graphics;
 
 /// 截图(screenshot)
 /// @param views 目标视图(Objective view)

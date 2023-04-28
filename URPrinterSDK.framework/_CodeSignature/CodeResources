@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CPCLCommnad.h</key>
 		<data>
-		O5KtQ0yl6EkGeDU+P6LKFnuRyrw=
+		H22mEwaqoZQZNqpDYxNUwJJjdew=
 		</data>
 		<key>Headers/ESCCommand.h</key>
 		<data>
@@ -18,19 +18,19 @@
 		</data>
 		<key>Headers/URPrinterManager.h</key>
 		<data>
-		9VN05SOaMo+uR1ub5c+Iq8odjDA=
+		WtkvHRtVullJETC6Sbht9gIjQLI=
 		</data>
 		<key>Headers/URPrinterOptions.h</key>
 		<data>
-		we98p5/8ftjNt6G89tdTMomi5ng=
+		oPgk3LhafqZ5OmDK+kH05Bk96O4=
 		</data>
 		<key>Headers/URPrinterSDK.h</key>
 		<data>
-		We28JRfl9d2nAChkVWA1XIUWJVM=
+		KXFsd9G0nsuy1JWt40kg6cmeFhI=
 		</data>
 		<key>Headers/URUtils.h</key>
 		<data>
-		QEMeuPkt42S8JYS5GZLf96nmsxc=
+		RG12ETTyWNJ2osZq62XIibhPVFw=
 		</data>
 		<key>Headers/ZPLCommand.h</key>
 		<data>
@@ -51,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O5KtQ0yl6EkGeDU+P6LKFnuRyrw=
+			H22mEwaqoZQZNqpDYxNUwJJjdew=
 			</data>
 			<key>hash2</key>
 			<data>
-			tzQc/37MjMyTMfH8cX4A4fu80GGyyYivzbrtTVCFYvY=
+			2OFinKDaWzQyQs86oAmXAt6hZ0zK9TTD4s8Hp40jvew=
 			</data>
 		</dict>
 		<key>Headers/ESCCommand.h</key>
@@ -84,44 +84,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9VN05SOaMo+uR1ub5c+Iq8odjDA=
+			WtkvHRtVullJETC6Sbht9gIjQLI=
 			</data>
 			<key>hash2</key>
 			<data>
-			NszEJkWCPWaSB0y157SGqTVtmWVT//WH3zTrU+AaLXw=
+			hyRJfSqMHG084jjdSKn1pMGByaM0rpwchOqe0SrSNE0=
 			</data>
 		</dict>
 		<key>Headers/URPrinterOptions.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			we98p5/8ftjNt6G89tdTMomi5ng=
+			oPgk3LhafqZ5OmDK+kH05Bk96O4=
 			</data>
 			<key>hash2</key>
 			<data>
-			UAVOkjj8gX2uU3dBrriBWrGBSI8JIuzCJdl2jpyk0yQ=
+			IWSHshlt4z9usOpyHgplXxBwGW4+QxrMGSYh5mKOviQ=
 			</data>
 		</dict>
 		<key>Headers/URPrinterSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			We28JRfl9d2nAChkVWA1XIUWJVM=
+			KXFsd9G0nsuy1JWt40kg6cmeFhI=
 			</data>
 			<key>hash2</key>
 			<data>
-			xNyMJkqBVMKLG0wQgE2vo0l4JARkjYV1n2C66AwiLeo=
+			Q8LNzH3VINzlghm9Khj1TAfxIhPJxH6Btu6uZI8TWnE=
 			</data>
 		</dict>
 		<key>Headers/URUtils.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QEMeuPkt42S8JYS5GZLf96nmsxc=
+			RG12ETTyWNJ2osZq62XIibhPVFw=
 			</data>
 			<key>hash2</key>
 			<data>
-			VtZJydkI5bc58+jY0wSAYpr8BUcjcSHQhbGKz+9Ui6s=
+			/p6gAB6OCli0tDcjTXy3YxAmDet6YhtEgk+2IBlkBUE=
 			</data>
 		</dict>
 		<key>Headers/ZPLCommand.h</key>

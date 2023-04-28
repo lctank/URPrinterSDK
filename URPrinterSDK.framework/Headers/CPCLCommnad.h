@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param x 文本横向起始位置(The horizontal starting position of the text)
 /// @param y 文本纵向起始位置(Vertical starting position of the text)
 /// @param content 需要打印的内容(What needs to be printed)
-- (void)addTextAngle:(TextAngle)angle withFont:(int)font size:(int)size x:(int)x y:(int)y content:(NSString *)content;
+- (void)addTextAngle:(URTextAngle)angle withFont:(int)font size:(int)size x:(int)x y:(int)y content:(NSString *)content;
 
 /// 文本串联(Text series)
 /// @param x 文本横向起始位置(The horizontal starting position of the text)
@@ -69,7 +69,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param x 条码横向起始位置(Horizontal starting position of barcode)
 /// @param y 条码纵向起始位置(Longitudinal starting position of the barcode)
 /// @param content 条码数据(Barcode data)
-- (void)addBarcodeOrientation:(Orientation)orientation type:(BarcodeType)type withWidth:(int)width ratio:(int)ratio height:(int)height x:(int)x y:(int)y content:(NSString *)content;
+- (void)addBarcodeOrientation:(URPrintOrientationType)orientation type:(URBarcodeType)type withWidth:(int)width ratio:(int)ratio height:(int)height x:(int)x y:(int)y content:(NSString *)content;
 
 /// 打印PDF-417条码(Print PDF-417 barcode)
 /// @param orientation 条码方向(Direction of the barcode)
@@ -80,7 +80,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param C 每行容纳的码数，值的范围为1-30，默认为3(The number of yards per line. Values range from 1 to 30. Default is 3)
 /// @param S 纠错等级，值的范围为0-8，默认为1(Error correction level. Values range from 0 to 8. Default is 1)
 /// @param content PDF-417条码数据(PDF-417 barcode data)
-- (void)addPDF417Orientation:(Orientation)orientation x:(int)x y:(int)y XD:(int)XD YD:(int)YD C:(int)C S:(int)S content:(NSString *)content;
+- (void)addPDF417Orientation:(URPrintOrientationType)orientation x:(int)x y:(int)y XD:(int)XD YD:(int)YD C:(int)C S:(int)S content:(NSString *)content;
 
 /// DATAMATRIX
 /// @param x 条码横向起始位置(Horizontal starting position of barcode)
@@ -104,19 +104,19 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param y 纵向起始位置(Longitudinal starting position)
 /// @param m QR Code 规范编号,1 或 2，推荐为 2(QR Code specification number,1 or 2, recommended as 2)
 /// @param u 模块的单位宽度/单位高度 1-32，默认为 6(The unit width/unit height of the module is 1-32, default is 6)
-- (void)addQRCodeVertical:(Orientation)orientation x:(int)x y:(int)y m:(int)m u:(int)u;
+- (void)addQRCodeVertical:(URPrintOrientationType)orientation x:(int)x y:(int)y m:(int)m u:(int)u;
 
 /// 打印二维码(Print QR code)
 /// @param level 纠错等级(Error correction level)
 /// @param mask 掩码，掩码有效范围为0-8，mask<0||mask>8省略掩码，交由下位机处理(Mask, mask valid range is 0 to 8, mask < 0 | | mask > 8 omit mask, to the next bit machine processing)
 /// @param mode 输入模式(The input mode)
 /// @param content 二维码内容(QR code content)
-- (void)addQRCodeLevel:(QRCodeLevel)level mask:(int)mask mode:(Mode)mode content:(NSString *)content;
+- (void)addQRCodeLevel:(URQRCodeLevel)level mask:(int)mask mode:(URQRCodeInputMode)mode content:(NSString *)content;
 
 /// 打印二维码(Print QR code)
 /// @param level 纠错等级(Error correction level)
 /// @param content 二维码内容(QR code content)
-- (void)addQRCodeLevel:(QRCodeLevel)level content:(NSString *)content;
+- (void)addQRCodeLevel:(URQRCodeLevel)level content:(NSString *)content;
 
 /// 结束QR Code指令(End the QR Code instruction)
 - (void)endQRCode;
@@ -153,17 +153,17 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param y 纵向起始位置(Longitudinal starting position)
 /// @param image 图片(Image)
 /// @param threshold 二值化阈值 0:自动 1-255:手动(Binarization threshold 0: automatic 1-255: manual)
-- (void)addImageGraphics:(Graphics)graphics width:(int)width x:(int)x y:(int)y image:(UIImage *)image withThreshold:(int)threshold;
+- (void)addImageGraphics:(URPrintGraphicsType)graphics width:(int)width x:(int)x y:(int)y image:(UIImage *)image withThreshold:(int)threshold;
 
 /// 使用对齐命令可以控制字段的对齐方式(Use the alignment command to control the alignment of fields)
 /// @param alignment 对齐方式(alignment)
 /// @param end 对齐的结束点。如果未输入参数，则对于横向打 印，对齐命令将使用打印头的宽度;而对于纵向 打印，对齐命令将使用零(页头)
 /// End point of alignment. If no arguments are entered, the alignment command uses the width of the print head for landscape printing; For portrait printing, the alignment command will use zero (header)
-- (void)addJustification:(Alignment)alignment end:(int)end;
+- (void)addJustification:(URPrintAlignment)alignment end:(int)end;
 
 /// 字段的对齐方式(Field alignment)
 /// @param alignment 对齐方式(alignment)
-- (void)addJustification:(Alignment)alignment;
+- (void)addJustification:(URPrintAlignment)alignment;
 
 /// 打印机假定页面宽度为打印机的完整宽度(The printer assumes that the page width is the full width of the printer)
 /// @param width 页面的单位宽度(The unit width of the page)
