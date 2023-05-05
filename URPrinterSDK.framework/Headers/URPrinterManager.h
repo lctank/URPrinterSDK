@@ -42,16 +42,16 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param connectState 连接状态
 -(void)connectPeripheral:(CBPeripheral *)peripheral options:(nullable NSDictionary<NSString *,id> *)options timeout:(NSUInteger)timeout connectBlack:(void(^_Nullable)(URConnectState state))connectState;
 
-/// 断开外设
-/// @param peripheral 需要断开连接的外设
-/// @param connectState 连接状态
-- (void)disConnectPeripheral:(CBPeripheral *)peripheral connectBlack:(void(^_Nullable)(URConnectState state))connectState;
-
 /// 写入数据
 /// @param data 写入的数据
 /// @param progress 写入进度
 /// @param callBack 蓝牙返回的数据
 -(void)write:(NSData *_Nullable)data progress:(void(^_Nullable)(NSUInteger total,NSUInteger progress))progress callBack:(void (^_Nullable)(NSData *_Nullable))callBack;
+
+/// 断开蓝牙外设
+/// @param peripheral 需要断开连接的外设
+/// @param connectState 连接状态
+- (void)disConnectPeripheral:(CBPeripheral *)peripheral connectBlack:(void(^_Nullable)(URConnectState state))connectState;
 
 
 /** WIFI */
@@ -67,9 +67,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param callBack 结果回调
 -(void)write:(NSData *_Nullable)data callBack:(void (^_Nullable)(NSData *_Nullable))callBack;
 
-/// 断开连接
-- (void)closeConnect;
+/// 断开WIFI连接
+- (void)disConnectIP;
 
+/// 断开连接，不区分WIFI和蓝牙
+- (void)closeAllConnect;
 
 @end
 
