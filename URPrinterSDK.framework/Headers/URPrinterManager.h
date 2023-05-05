@@ -14,7 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface URPrinterManager : NSObject
 
+/// 是否连接设备（蓝牙或者wifi）
 @property(nonatomic,assign)BOOL isConnect;
+
+/// 当前蓝牙状态
+@property(nonatomic,assign)URBluetoothState bluetoothState;
 
 
 + (instancetype)sharedInstance;
