@@ -7,23 +7,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <URPrinterSDK/URPrinterOptions.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
-typedef NS_ENUM (NSUInteger,ZPLPAPERTYPE){
-    PAPER_N = 0,//连续纸张
-    PAPER_Y = 2,//非连续间隙纸张
-    PAPER_W = 3,//非连续间隙纸张
-    PAPER_M = 4,//非连续黑标纸张
-    PAPER_A = 5//自动选择
-};
-
-typedef NS_ENUM (NSUInteger,ZPLORIENTATION) {
-    ZPL_NORMAL = 0,
-    ZPL_ROATED = 1,
-    ZPL_INVERTED = 2,
-    ZPL_BOTTOM = 3
-};
 
 @interface ZPLCommand : NSObject
 
@@ -106,7 +92,7 @@ typedef NS_ENUM (NSUInteger,ZPLORIENTATION) {
  * @param type  使用的纸张类型，必须设置值否则指令无效
  *  @param offset  黑标起始偏移：缺省值：0(在 type=PAPER_M时才有效)，其他值：-120 到 283
  */
--(void)setPaperType:(ZPLPAPERTYPE) type withBLineStartOffset:(int)offset;
+-(void)setPaperType:(URPaperType)type withBLineStartOffset:(int)offset;
 
 /**
  * 方法说明：选择使用的介质类型。
@@ -189,7 +175,7 @@ typedef NS_ENUM (NSUInteger,ZPLORIENTATION) {
  * @param isNote 是否显示条码文字，默认NO
  * @param isAbove 条码文字是否在上方，默认NO,在下方
  */
--(void)addCODE128:(NSString*) content x:(int)x y:(int)y orienftation:(ZPLORIENTATION)orienftation barHeight:(int)barHeight wh:(int)wh isNote:(BOOL)isNote isAbove:(BOOL)isAbove;
+-(void)addCODE128:(NSString*) content x:(int)x y:(int)y orienftation:(UROrientationType)orienftation barHeight:(int)barHeight wh:(int)wh isNote:(BOOL)isNote isAbove:(BOOL)isAbove;
 
 /**
  * 方法说明：打印EAN8码:
@@ -202,7 +188,7 @@ typedef NS_ENUM (NSUInteger,ZPLORIENTATION) {
  * @param isNote 是否显示条码文字，默认NO
  * @param isAbove 条码文字是否在上方，默认NO,在下方
  */
--(void)addEAN8:(NSString*) content x:(int)x y:(int)y orienftation:(ZPLORIENTATION)orienftation barHeight:(int)barHeight wh:(int)wh isNote:(BOOL)isNote isAbove:(BOOL)isAbove;
+-(void)addEAN8:(NSString*) content x:(int)x y:(int)y orienftation:(UROrientationType)orienftation barHeight:(int)barHeight wh:(int)wh isNote:(BOOL)isNote isAbove:(BOOL)isAbove;
 
 /**
  * 方法说明：打印EAN13码
@@ -215,7 +201,7 @@ typedef NS_ENUM (NSUInteger,ZPLORIENTATION) {
  * @param isNote 是否显示条码文字，默认NO
  * @param isAbove 条码文字是否在上方，默认NO,在下方
 */
--(void)addEAN13:(NSString*) content x:(int)x y:(int)y orienftation:(ZPLORIENTATION)orienftation barHeight:(int)barHeight wh:(int)wh isNote:(BOOL)isNote isAbove:(BOOL)isAbove;
+-(void)addEAN13:(NSString*) content x:(int)x y:(int)y orienftation:(UROrientationType)orienftation barHeight:(int)barHeight wh:(int)wh isNote:(BOOL)isNote isAbove:(BOOL)isAbove;
 
 /**
  * 方法说明：打印UPCA条码
@@ -228,7 +214,7 @@ typedef NS_ENUM (NSUInteger,ZPLORIENTATION) {
  * @param isNote 是否显示条码文字，默认NO
  * @param isAbove 条码文字是否在上方，默认NO,在下方
 */
--(void)addUPCA:(NSString*)content x:(int)x y:(int)y orienftation:(ZPLORIENTATION)orienftation barHeight:(int)barHeight wh:(int)wh isNote:(BOOL)isNote isAbove:(BOOL)isAbove;
+-(void)addUPCA:(NSString*)content x:(int)x y:(int)y orienftation:(UROrientationType)orienftation barHeight:(int)barHeight wh:(int)wh isNote:(BOOL)isNote isAbove:(BOOL)isAbove;
     
 /**
  * 方法说明：打印UPCE条码
@@ -241,7 +227,7 @@ typedef NS_ENUM (NSUInteger,ZPLORIENTATION) {
  * @param isNote 是否显示条码文字，默认NO
  * @param isAbove 条码文字是否在上方，默认NO,在下方
 */
--(void)addUPCE:(NSString*)content x:(int)x y:(int)y orienftation:(ZPLORIENTATION)orienftation barHeight:(int)barHeight wh:(int)wh isNote:(BOOL)isNote isAbove:(BOOL)isAbove;
+-(void)addUPCE:(NSString*)content x:(int)x y:(int)y orienftation:(UROrientationType)orienftation barHeight:(int)barHeight wh:(int)wh isNote:(BOOL)isNote isAbove:(BOOL)isAbove;
 
 /**
  * 方法说明：打印CODE39条码
@@ -254,7 +240,7 @@ typedef NS_ENUM (NSUInteger,ZPLORIENTATION) {
  * @param isNote 是否显示条码文字，默认NO
  * @param isAbove 条码文字是否在上方，默认NO,在下方
 */
--(void)addCODE39:(NSString*)content x:(int)x y:(int)y orienftation:(ZPLORIENTATION)orienftation barHeight:(int)barHeight wh:(int)wh isNote:(BOOL)isNote isAbove:(BOOL)isAbove;
+-(void)addCODE39:(NSString*)content x:(int)x y:(int)y orienftation:(UROrientationType)orienftation barHeight:(int)barHeight wh:(int)wh isNote:(BOOL)isNote isAbove:(BOOL)isAbove;
 
 /**
  * 方法说明：画边框

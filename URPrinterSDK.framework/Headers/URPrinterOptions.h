@@ -71,7 +71,7 @@ typedef NS_ENUM (NSUInteger,URBarcodeType) {
  */
 typedef NS_ENUM (NSUInteger,URPrintOrientationType) {
     URPrintOrientationTypeHorizontal,///<水平打印(Horizontal print)
-    URPrintOrientationTypeHorizontalVertical///<垂直打印(Vertical print)
+    URPrintOrientationTypeVertical///<垂直打印(Vertical print)
 };
 
 /**
@@ -116,7 +116,30 @@ typedef NS_ENUM (NSUInteger,URPrintGraphicsType) {
     URPrintGraphicsTypeExpanded,///<横向打印扩展图形(Print the extended graph horizontally)
     URPrintGraphicsTypeCompressed,///<横向打印压缩图形(Print compressed graphics laterally)
 };
+/**
+ *  @enum URPaperType
+ *
+ *  @discussion 纸张类型(适用于ZPL指令)
+ */
+typedef NS_ENUM (NSUInteger,URPaperType){
+    URPaperTypePaper_N = 0,//连续纸张
+    URPaperTypePaper_Y = 2,//非连续间隙纸张
+    URPaperTypePaper_W = 3,//非连续间隙纸张
+    URPaperTypePaper_M = 4,//非连续黑标纸张
+    URPaperTypePaper_A = 5//自动选择
+};
 
 
+/**
+ *  @enum UROrientationType
+ *
+ *  @discussion 条码方向(适用于ZPL指令)
+ */
+typedef NS_ENUM (NSUInteger,UROrientationType) {
+    UROrientationTypeNormal = 0,   //正常
+    UROrientationTypeRoated = 1,   //顺时针旋转 90 度
+    UROrientationTypeInverted = 2, //顺时针旋转 180 度
+    UROrientationTypeBottom = 3    //顺时针旋转 270 度
+};
 
 #endif /* URPrinterOptions_h */

@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/URPrinterOptions.h</key>
 		<data>
-		oPgk3LhafqZ5OmDK+kH05Bk96O4=
+		H7OMDSJFmgbeXy7Otl+mrONvZQA=
 		</data>
 		<key>Headers/URPrinterSDK.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/ZPLCommand.h</key>
 		<data>
-		nPfnitJ2c1EtVYhO9xqw/0I29eE=
+		Ah01bhMh/rhDId9HedDsLkxf1ig=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -95,11 +95,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oPgk3LhafqZ5OmDK+kH05Bk96O4=
+			H7OMDSJFmgbeXy7Otl+mrONvZQA=
 			</data>
 			<key>hash2</key>
 			<data>
-			IWSHshlt4z9usOpyHgplXxBwGW4+QxrMGSYh5mKOviQ=
+			rJ4i6p+Y1/BCTI+3RmfZ0dDO6C/jp3W0XFhFI7KON/g=
 			</data>
 		</dict>
 		<key>Headers/URPrinterSDK.h</key>
@@ -128,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nPfnitJ2c1EtVYhO9xqw/0I29eE=
+			Ah01bhMh/rhDId9HedDsLkxf1ig=
 			</data>
 			<key>hash2</key>
 			<data>
-			n4w8VPkh8b6y0YAikTI/+Q1STSYxGkCCZyTxcM1o73M=
+			rO5KYkEckatG0MP1h8aLV9nQsD0K5vTY8AbGIjT1Ftg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
