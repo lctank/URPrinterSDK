@@ -142,4 +142,14 @@ typedef NS_ENUM (NSUInteger,UROrientationType) {
     UROrientationTypeBottom = 3    //顺时针旋转 270 度
 };
 
+/**
+ *  @enum URPrintType
+ *
+ *  @discussion 蓝牙或者wifi打印
+ */
+typedef NS_ENUM (NSUInteger,URPrintType) {
+    URPrintTypeBLE = 0,   //蓝牙
+    URPrintTypeWiFi = 1,  //wifi
+};
+
 #endif /* URPrinterOptions_h */
