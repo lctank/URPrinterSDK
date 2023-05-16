@@ -4,9 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/CPCLCommnad.h</key>
+		<key>Headers/CPCLCommand.h</key>
 		<data>
-		H22mEwaqoZQZNqpDYxNUwJJjdew=
+		ZkcAiEb0NnouO9T/6PliMqsy13E=
 		</data>
 		<key>Headers/ESCCommand.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/URPrinterManager.h</key>
 		<data>
-		A7xFnme04OF5r7gLkO7/frihQO0=
+		tCgJm/w7GrwUtQufRdLe57Ez9eU=
 		</data>
 		<key>Headers/URPrinterOptions.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/URPrinterSDK.h</key>
 		<data>
-		KXFsd9G0nsuy1JWt40kg6cmeFhI=
+		LyhsSS9yvL3hH/DMVfFig016Lu4=
 		</data>
 		<key>Headers/URUtils.h</key>
 		<data>
@@ -47,15 +47,15 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/CPCLCommnad.h</key>
+		<key>Headers/CPCLCommand.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			H22mEwaqoZQZNqpDYxNUwJJjdew=
+			ZkcAiEb0NnouO9T/6PliMqsy13E=
 			</data>
 			<key>hash2</key>
 			<data>
-			2OFinKDaWzQyQs86oAmXAt6hZ0zK9TTD4s8Hp40jvew=
+			x9KktPaRg5X2L5hYbBz9vH5SfDx8jT38WaosCML3xIY=
 			</data>
 		</dict>
 		<key>Headers/ESCCommand.h</key>
@@ -84,11 +84,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			A7xFnme04OF5r7gLkO7/frihQO0=
+			tCgJm/w7GrwUtQufRdLe57Ez9eU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZZ8+lc9wdwoJP4H04+7dCoIWLG0VyynFslwP/wR00o4=
+			oT/98++24RvJAdL9Ahba+hEHsJJsfsc8t9PrySUpkrE=
 			</data>
 		</dict>
 		<key>Headers/URPrinterOptions.h</key>
@@ -106,11 +106,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KXFsd9G0nsuy1JWt40kg6cmeFhI=
+			LyhsSS9yvL3hH/DMVfFig016Lu4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q8LNzH3VINzlghm9Khj1TAfxIhPJxH6Btu6uZI8TWnE=
+			7QeDzethouC/FSe3NvQV39wJcWnML9uAe4sJmAt2lzQ=
 			</data>
 		</dict>
 		<key>Headers/URUtils.h</key>

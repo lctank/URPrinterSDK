@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CPCLCommnad : NSObject
+@interface CPCLCommand : NSObject
 
 /// 标签初始化(Tag initialization)
 /// @param offset 标签横向偏移量 (Label lateral offset)

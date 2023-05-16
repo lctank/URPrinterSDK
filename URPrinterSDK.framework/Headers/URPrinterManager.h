@@ -23,6 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 打印方式（蓝牙或者wifi）
 @property(nonatomic,assign,readonly)URPrintType printType;
 
+/// 是否正在打印，用户自行设置
+@property(nonatomic,assign)BOOL isPrinting;
+
 
 + (instancetype)sharedInstance;
 
@@ -45,7 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 连接外设
 /// @param peripheral 需要连接的外设
 /// @param options 其他可选操作
-/// @param timeout 连接超时时间
+/// @param timeout 连接超时时间  默认30秒
 /// @param connectState 连接状态
 -(void)connectPeripheral:(CBPeripheral *)peripheral options:(nullable NSDictionary<NSString *,id> *)options timeout:(NSUInteger)timeout connectBlack:(void(^_Nullable)(URConnectState state))connectState;
 
