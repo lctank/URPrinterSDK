@@ -110,6 +110,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param orientation 方向(orientation)
 + (UIImage *)image:(UIImage *)image rotation:(UIImageOrientation)orientation;
 
+/// 裁剪图片
+/// @param height 图片切片最大高度
+/// @param image 目标图片
++ (NSArray *)cropImageWithMaxHeight:(int)height withImage:(UIImage *)image;
+
 @end
 
 NS_ASSUME_NONNULL_END
